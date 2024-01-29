@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Authentication</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Registration Form -->
+        <form id="register-form" action="register.php" method="post" enctype="multipart/form-data">
+            <input type="text" name="username" placeholder="Username" required>
+            <input type="password" name="password" placeholder="Password" required>
+            <input type="text" name="details" placeholder="Your Details" required>
+            <input type="file" name="photo" accept="image/*" required>
+            <button type="submit">Register</button>
+        </form>
+
+        <!-- Login Form -->
+        <form id="login-form" action="login.php" method="post">
+            <input type="text" name="username" placeholder="Username" required>
+            <input type="password" name="password" placeholder="Password" required>
+            <button type="submit">Login</button>
+        </form>
+
+        <!-- Display User Details -->
+        <div id="user-details">
+            <!-- User details and photo will be displayed here -->
+        </div>
+    </div>
+</body>
+</html>
